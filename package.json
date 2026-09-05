@@ -1,0 +1,15 @@
+{
+  "name": "agent-platform-foundation",
+  "version": "1.0.0-rc2.1",
+  "private": true,
+  "description": "Binding rules, contracts and verification requirements for a modular farm of AI agents, deterministic modules and single-purpose executors.",
+  "type": "module",
+  "scripts": {
+    "test": "node scripts/validate-contracts.mjs",
+    "build:pack": "node scripts/build-review-pack.mjs"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  }
+}
