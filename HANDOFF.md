@@ -2,6 +2,20 @@
 
 Append-only. Nejnovější záznam nahoru. Slouží k pokračování z jiného počítače / po pauze.
 
+## 2026-09-06 — publikováno na GitHub, ai-agenti doplněno, začíná první implementace
+
+- **GitHub:** `https://github.com/Anamax443/agent-platform-foundation` (public), první commit `12a3c32`,
+  CI `kontrola.yml` = `npm test` + `build:pack` + gitleaks + kontrola odkazů (bez `docs/history`).
+- **ai-agenti:** návrhový list doplněn o osm řádků podle `PLATFORM-NOTES.md §5`, F3 brána v build předpisu
+  má bezpečnostní invariant testy; commit `020e818` na `main`.
+- **První implementace:** nové repo `Anamax443/agent-platform-first-slice` (public), kontrakty pinované
+  na `1.0-rc2.1 12a3c32` (`contracts/CONTRACTS-VERSION`). Řez `document.classify` → `document.validate`
+  → `document.stamp` podle XII.G; měření podle XVI.4 v `docs/MEASUREMENT.md` tam.
+- **Lean (dotaz vlastníka):** norma lean principy obsahuje implicitně (evidence před abstrakcí, Core na tah,
+  jidoka přes UNVERIFIED, standardní práce přes Test ID, malý řez). Porušila je čtyřmi koly papíru; proto freeze.
+  V první implementaci se plýtvání měří explicitně (kategorie muda v MEASUREMENT.md), WIP limit = jeden řez.
+- **Zmrazené soubory se nemění.** Tento záznam mění jen HANDOFF.
+
 ## 2026-09-05 (uzavření) — 4. kolo oponentury, freeze rc2.1, konec textové fáze
 
 **Vstup:** tři posudky rc2.1 (9,2 / 9,5 / 9,5) + jeden opakovaný text 3. kola. 1 MINOR, 3 NOTE, 0 MAJOR. Protokol: `docs/review-pack/parts/16-oponentura-kolo4-uzavreni.md` (část XVI).
